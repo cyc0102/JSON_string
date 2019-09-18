@@ -1,6 +1,8 @@
 import json
+import time
+names = ['Jackie Chan','Jet Li','zoe']
 # a Python object (dict)
-x = {"timestamp": 1568287902, "recognized": ["Jackie Chan", "Jet Li"]}
+x = {"timestamp":  time.time(),"recognized": names}
 # convert into JSON:
 y = json.dumps(x)
 
