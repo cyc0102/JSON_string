@@ -1,8 +1,9 @@
 import json
 import time
-names = ['Jackie Chan','Jet Li','zoe']
+import calendar
+names = ['Unknown','Jackie Chan','Jet Li','zoe','Unknown']
 # a Python object (dict)
-x = {"timestamp":  time.time(),"recognized": names}
+x = {"timestamp":  calendar.timegm(time.gmtime()) ,"recognized": names}
 # convert into JSON:
 y = json.dumps(x)
 
